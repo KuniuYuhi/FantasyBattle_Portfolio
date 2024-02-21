@@ -137,15 +137,16 @@
         </head>
         <body class="vscode-body vscode-light">
             <h1 id="fantasy-battle">FANTASY BATTLE</h1>
-<img src="README_IMAGE\TitleFull.png" width="600" alt="タイトル">  
+<p><img src="README_IMAGE\TitleFull.png" width="600" alt="タイトル"><br></p>
 <hr>
 <p>河原電子ビジネス専門学校　
 ゲームクリエイター科2年<br>
 氏名：国宇雄飛<br></p>
-<h2 id="目次-">目次 <!-- omit in toc --></h2>
+<h2 id="目次">目次</h2>
 <ul>
 <li><a href="#fantasy-battle">FANTASY BATTLE</a>
 <ul>
+<li><a href="#%E7%9B%AE%E6%AC%A1">目次</a></li>
 <li><a href="#1%E4%BD%9C%E5%93%81%E6%A6%82%E8%A6%81">1.作品概要</a></li>
 <li><a href="#2%E6%8B%85%E5%BD%93%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89">2.担当ソースコード</a></li>
 <li><a href="#3%E6%93%8D%E4%BD%9C%E8%AA%AC%E6%98%8E">3.操作説明</a></li>
@@ -158,25 +159,27 @@
 <li><a href="#2%E3%83%9C%E3%82%B9%E3%81%AE%E7%99%BB%E5%A0%B4">2.ボスの登場</a></li>
 </ul>
 </li>
-<li><a href="#43-%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.3 プレイヤーについて</a>
+<li><a href="#43-csv%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%AE%A1%E7%90%86">4.3 CSVによるデータの管理</a></li>
+<li><a href="#44-%E3%83%97%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.4 プレイヤーについて</a>
 <ul>
 <li><a href="#a%E6%AD%A6%E5%99%A8%E3%81%94%E3%81%A8%E3%81%AE%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%87%A6%E7%90%86%E3%81%AE%E7%B5%B1%E4%B8%80">a.武器ごとのアニメーション処理の統一</a></li>
 <li><a href="#b%E6%94%BB%E6%92%83%E6%99%82%E3%81%AE%E7%A7%BB%E5%8B%95%E6%96%B9%E5%90%91">b.攻撃時の移動方向</a></li>
 </ul>
 </li>
-<li><a href="#44-%E6%AD%A6%E5%99%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.4 武器について</a></li>
-<li><a href="#45-%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.5 モンスターについて</a>
+<li><a href="#45-%E6%AD%A6%E5%99%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.5 武器について</a></li>
+<li><a href="#46-%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">4.6 モンスターについて</a>
 <ul>
 <li><a href="#1%E3%83%A2%E3%83%96%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E6%8C%99%E5%8B%95">1.モブモンスターの挙動</a></li>
 <li><a href="#a%E3%83%A2%E3%83%96%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E3%83%8E%E3%83%83%E3%82%AF%E3%83%90%E3%83%83%E3%82%AF">a.モブモンスターのノックバック</a></li>
 <li><a href="#b%E3%83%A2%E3%83%96%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%81%AE%E8%BF%BD%E8%B7%A1">b.モブモンスターの追跡</a></li>
 <li><a href="#2%E3%83%9C%E3%82%B9%E3%81%AE%E6%8C%99%E5%8B%95">2.ボスの挙動</a></li>
-<li><a href="#a%E3%83%9C%E3%82%B9%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3">a.ボスのアクション</a></li>
+<li><a href="#a%E3%83%9C%E3%82%B9%E3%81%AE%E7%A7%BB%E5%8B%95%E3%81%A8%E5%BE%85%E6%A9%9F">a.ボスの移動と待機</a></li>
+<li><a href="#b%E3%83%9C%E3%82%B9%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3">b.ボスのアクション</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#5%E3%81%9D%E3%81%AE%E4%BB%96">5.その他</a>
+<li><a href="#5%E6%8A%80%E8%A1%93%E7%B4%B9%E4%BB%8B">5.技術紹介</a>
 <ul>
 <li><a href="#51%E3%83%87%E3%83%97%E3%82%B9%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6">5.1.デプスシャドウ</a></li>
 <li><a href="#52%E3%82%AB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%89%E3%82%B7%E3%83%A3%E3%83%89%E3%82%A6">5.2.カスケードシャドウ</a></li>
@@ -209,7 +212,7 @@
 </li>
 <li>製作期間
 <ul>
-<li>2023年6月～現在</li>
+<li>2023年6月～2024年1月</li>
 </ul>
 </li>
 <li>ゲームジャンル
@@ -669,10 +672,22 @@
 <td><img src="README_IMAGE\GreatSword.png" width="150" alt="グレイトソード"></td>
 <td><img src="README_IMAGE\BowArrow.png" width="150" alt="ボウ＆アロー"></td>
 </tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
-<p>バトルにはフェーズが存在し、一定時間ごとにフェーズが進み、敵を生成します。フェーズが進行すると、前のフェーズに存在したモブモンスターは消滅します。第4フェーズに進行すると、モブモンスターが出現しない時間(休憩時間)となりフェーズ終了後、第1フェーズに戻り以降ループします。<br></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qej_o-bO8EI?si=1vAGo6YA5AczTmKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+<p>バトルにはウェーブが存在し、一定時間ごとにウェーブが進み、敵を生成します。ウェーブが進行すると、前のフェーズに存在したモブモンスターは消滅します。第4ウェーブに進行すると、モブモンスターが出現しない時間(休憩時間)となりウェーブ終了後、第1ウェーブに戻り以降ループします。<br></p>
+<iframe
+    width="560"
+    height="315"
+    allowfullscreen=""
+    src="https://www.youtube.com/embed/KsoZ_ABZ4k4?rel=1&fs=1&modestbranding=1&controls=1&color=white"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+></iframe>
   <div style="text-align: right;">
 <h4 id="目次に戻る--1"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
@@ -697,7 +712,17 @@
 <h4 id="目次に戻る--3"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
-<h3 id="43-プレイヤーについて">4.3 プレイヤーについて</h3>
+<h3 id="43-csvによるデータの管理">4.3 CSVによるデータの管理</h3>
+<p>ゲームのバランス調整やデバッグをしやすくするためにCSVを利用してプレイヤーや武器、モンスターのステータスの管理をしました。<br></p>
+<p>キャラクターのステータス<br>
+<img src="README_IMAGE\Character_Status.png" width="600" alt="ボス登場"><br><br>
+武器のステータス<br>
+<img src="README_IMAGE\Weapon_Status.png" width="600" alt="ボス登場"><br></p>
+  <div style="text-align: right;">
+<h4 id="目次に戻る--4"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+</div>
+<hr>
+<h3 id="44-プレイヤーについて">4.4 プレイヤーについて</h3>
 <p>プレイヤーの状態はステートパターンを利用してステートで管理しています。また、ポリモーフィズムを利用することで、同じ関数で違う処理を行えるようにし、行動の追加を容易にしました。<br>
 同じステートが武器の数だけあると、状態遷移する際に武器の違いによる処理が複雑になるため、全ての武器で同じステートクラスを利用できるようにしました。<br></p>
 <video width="480" height="360" controls>
@@ -815,10 +840,10 @@ mainWeaponAnimationStartIndexNoの値がそれぞれの武器のアニメーシ�
 <img src="README_IMAGE\AttackVector.png" width="600" alt="攻撃移動ベクトル"><br></p>
 <p><img src="README_IMAGE\movie\ComboVector.gif" width="600" alt="攻撃移動ベクトル動画"><br></p>
   <div style="text-align: right;">
-<h4 id="目次に戻る--4"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--5"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
-<h3 id="44-武器について">4.4 武器について</h3>
+<h3 id="45-武器について">4.5 武器について</h3>
 <p>武器は主人公のモデルとは別で用意していて、武器の座標、回転を、主人公のモデルの手のボーンからワールド座標を取得して設定しています。<br>
 ですが、この方法では武器の回転の挙動がおかしくなっていました。<br>
 <img src="README_IMAGE\movie\weaponWorldPos.gif" width="600" alt="武器のワールド座標(失敗)"><br></p>
@@ -827,10 +852,10 @@ mainWeaponAnimationStartIndexNoの値がそれぞれの武器のアニメーシ�
 <p>そこで、今回はモデルの情報を設定、更新しているmodelクラスの変数m_worldMatrixを使って直接ワールド座標を設定しました。<br></p>
 <p><img src="README_IMAGE\movie\WeaponWorldPos_Success.gif" width="600" alt="武器のワールド座標(成功)"><br></p>
 <div style="text-align: right;">
-<h4 id="目次に戻る--5"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--6"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
-<h3 id="45-モンスターについて">4.5 モンスターについて</h3>
+<h3 id="46-モンスターについて">4.6 モンスターについて</h3>
 <p>モンスターは、ボスモンスターとモブモンスターの2種類が存在しています。<br></p>
 <p>モブモンスター</p>
 <table>
@@ -849,33 +874,53 @@ mainWeaponAnimationStartIndexNoの値がそれぞれの武器のアニメーシ�
 </table><br>
 <p>モンスターの状態も主人公と同様ステートパターンで管理しています。<br>
 そして、モンスターの行動を管理、調整、追加をしやすくするために、階層型ステートマシンを作成しました。<br>
-階層型ステートマシンを作成した理由は、単にステートを増やしていくと遷移条件の管理や変更が大変だったためです。ステートを階層化することで、ステートを内包するより大きなステートを形成しました。<br>
+階層型ステートマシンとは、増えた状態の管理をしやすくするため、ステートを階層化することで、小さいステートを内包するより大きなステートを形成し、小さいステートの処理を個別で行うというものです。<br>
+階層型ステートマシンを作成した理由は、単にステートを増やしていくと遷移条件の管理や変更が大変だったためです。<br>
 その結果、状態の管理、追加、変更が容易くなりました。また大きなステートが分かれていることで、攻撃中に勝手に移動するなどの意図しない行動を防ぐことができました。<br>
 <img src="README_IMAGE\MonsterState.png" width="600" alt="モブモンスターのステートマシン図"><br></p>
 <h4 id="1モブモンスターの挙動">1.モブモンスターの挙動</h4>
 <p>モブモンスターは「追跡」と「巡回」の2つのステートマシンを作成しました。<br>
 「巡回」ステートマシンでは、自由に移動します。敵を発見すると「追跡」ステートマシンに遷移し、敵を追いかけ、攻撃します。<br>
-また、全てのモブモンスターで共通のステートマシンを使うことで、追跡距離や視野角をモブモンスター側で変更するだけで、モンスターによって違った動きができます。<br>
+また、モブモンスターそれぞれのステートマシンではなく、共通のステートマシンを使い、モブモンスターによって違う追跡距離や視野角などの情報を取得し、モンスターによって違った動きができるようにしました。<br>
 <img src="README_IMAGE\mob_stateMachine.png" width="600" alt="モブモンスターのステートマシン図"><br></p>
 <h4 id="aモブモンスターのノックバック">a.モブモンスターのノックバック</h4>
 <p>モブモンスターはプレイヤーに攻撃されると、ノックバックします。<br>
 ノックバックすることで、プレイヤーから一方的に攻撃されないようにしました。<br>
-また、ノックバックした後に一瞬だけ硬直するようにすることで、被ダメージ後に直ぐにプレイヤーの方に向かってくる時の違和感をなくすことができました。<br>
-<img src="README_IMAGE\movie\KnockBack.gif" width="600" alt="モブモンスターのノックバック"></p>
+また、ノックバックした後に一瞬だけ硬直するようにすることで、被ダメージ後に直ぐにプレイヤーの方に向かってくる時の違和感をなくすことができました。</p>
+<table>
+<thead>
+<tr>
+<th>被ダメージ後の硬直なし</th>
+<th>被ダメージ後の硬直あり</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="README_IMAGE\movie\KnockBack_Off.gif" width="600" alt="モブモンスターのノックバック"></td>
+<td><img src="README_IMAGE\movie\KnockBack_On.gif" width="600" alt="モブモンスターのノックバック"></td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h4 id="bモブモンスターの追跡">b.モブモンスターの追跡</h4>
-<p>モンスターがプレイヤーを追いかけたときに、何体もモンスターがついてくると、プレイヤーがモンスターに囲まれて逃げられなくなったり、敵の列ができて見栄えが良くなくなってしまいます。<br>
+<p>モンスターがプレイヤーを追いかけたときに、何体もモンスターがついてくると、プレイヤーがモンスターに囲まれて逃げられなくなったり、
+モンスターがかたまって集まってしまっていることで、攻撃できないモンスターの列ができたりして見栄えが良くなくなってしまいます。<br>
 <img src="README_IMAGE\movie\Monsters.gif" width="600" alt="モブモンスターが沢山ついてきている"><br>
 そのため、プレイヤーに近づけるモンスターを制限して、プレイヤーの逃げ道を作れるようにしました。<br>
 今回は、プレイヤーに近づけるモンスターの数を3体にしています。<br>
 <img src="README_IMAGE\movie\MonsterAssembly.gif" width="600" alt="モブモンスターの近づける数制限"><br></p>
 <div style="text-align: right;">
-<h4 id="目次に戻る--6"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--7"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <h4 id="2ボスの挙動">2.ボスの挙動</h4>
 <p>ボスは「警戒」と「攻撃」の2つのステートマシンを作成しました。<br>
 「警戒」ステートマシンでは、ボスはその場から動かず、常にプレイヤーに目線を向けます。またプレイヤーがしばらくの間近くにいると、ノックバック攻撃を行ってプレイヤーを自身から遠ざけます。<br>
 一定時間待機すると「攻撃」ステートマシンに遷移し、プレイヤーの距離によって違った攻撃を行います。<br>
-<img src="README_IMAGE\Boss_StateMachine.png" width="600" alt="ボスモンスターのステートマシン図"><br></p>
+階層型ステートマシンを使おうと考えた一番の理由は、ボスの複数の攻撃方法の管理を容易にするためです。<br></p>
+<p><img src="README_IMAGE\Boss_StateMachine.png" width="600" alt="ボスモンスターのステートマシン図"><br></p>
 <h4 id="aボスの移動と待機">a.ボスの移動と待機</h4>
 <p>ボスはプレイヤーに近づきすぎないようにプレイヤーからボスに向かう距離が一定値に達すると待機するようになっています。<br>
 ですが、この処理プレイヤーが少し動くとボスも少しだけ動いて、待機アニメーションと移動アニメーションが交互に入れ替わり違和感が出てしまいました。<br>
@@ -884,6 +929,12 @@ mainWeaponAnimationStartIndexNoの値がそれぞれの武器のアニメーシ�
 <img src="README_IMAGE\movie\Boss_distance_success.gif" width="600" alt="ボスの一定距離で止まる処理ミス"><br></p>
 <h4 id="bボスのアクション">b.ボスのアクション</h4>
 <ul>
+<li>
+<p>ノックバック攻撃<br>
+風を巻き起こしてプレイヤーを自身から遠ざけます。<br>
+プレイヤーがボスに近づいている時間を計るタイマーが一定時間に達するとノックバック攻撃を行います。攻撃を受けるとタイマーが加速してノックバック攻撃までの時間が早くなります。<br>
+<img src="README_IMAGE\movie\KnockBackAttack.gif" width="600" alt="ダークメテオ"><br></p>
+</li>
 <li>
 <p>ダークメテオ<br>
 プレイヤーの周囲に隕石を落とします。<br>
@@ -897,10 +948,10 @@ mainWeaponAnimationStartIndexNoの値がそれぞれの武器のアニメーシ�
 </li>
 </ul>
 <div style="text-align: right;">
-<h4 id="目次に戻る--7"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--8"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
-<h2 id="5その他">5.その他</h2>
+<h2 id="5技術紹介">5.技術紹介</h2>
 <h3 id="51デプスシャドウ">5.1.デプスシャドウ</h3>
 <p>デプスシャドウは「影はライトの光が遮られている場所に落ちるはずなので、影の落ちる箇所には、手前に遮蔽物があるはず」という考え方をもとに影を落とします。<br>
 そして、投影シャドウの欠点である、影が落ちないはずの場所に落ちてしまう、セルフシャドウが行えない、ということを解決することができます。<br>
@@ -938,7 +989,7 @@ albedoColor.xyz *= shadow;
 
 </code></pre>
 <div style="text-align: right;">
-<h4 id="目次に戻る--8"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--9"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 <h3 id="52カスケードシャドウ">5.2.カスケードシャドウ</h3>
@@ -1080,7 +1131,7 @@ m_lvpcMatrix[areaNo] = lvpMatrix * clopMatrix;
 </code></pre>
 <p>e.作成した行列を使ってシェーダー側で座標変換し、シャドウマップを使って影を落としました。<br></p>
 <div style="text-align: right;">
-<h4 id="目次に戻る--9"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--10"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 <h3 id="53vsm">5.3.VSM</h3>
@@ -1093,14 +1144,27 @@ m_lvpcMatrix[areaNo] = lvpMatrix * clopMatrix;
  <span class="hljs-type">float</span> pos = <span class="hljs-built_in">exp</span>(INFINITY * depth);
  <span class="hljs-keyword">return</span> float4(pos, pos * pos, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>);
 </code></pre>
-<p>深度値を書き込んだシャドウマップ(近影、中影、遠影)<br></p>
 <table>
+<thead>
 <tr>
-<td><img src="README_IMAGE\blur_near.png" width="200" alt="近影のブラー"></td>
-<td><img src="README_IMAGE\blur_center.png" width="200" alt="中影のブラー"></td>
-<td><img src="README_IMAGE\blur_far.png" width="200" alt="遠影のブラー"></td>
+<th>近影のシャドウマップ</th>
+<th>中影のシャドウマップ</th>
+<th>遠影のシャドウマップ</th>
 </tr>
-</table><br>
+</thead>
+<tbody>
+<tr>
+<td><img src="README_IMAGE\blur_near.png" width="200" alt="近影のシャドウマップ"></td>
+<td><img src="README_IMAGE\blur_center.png" width="200" alt="中影のシャドウマップ"></td>
+<td><img src="README_IMAGE\blur_far.png" width="200" alt="遠影のシャドウマップ"></td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>2.作成したシャドウマップにガウシアンブラーをかけシャドウマップにブラーをかけます。<br>
 元のテクスチャの1/4サイズのテクスチャを作成することで、4×4ブロックで局所的な平均を計算出来ます。<br></p>
 <p>3.チェビシェフの不等式を使用して光が当たる確率を求めます。<br></p>
@@ -1126,7 +1190,7 @@ lig_factor = saturate((lig_factor - lig_factor_min) / (<span class="hljs-number"
 <pre><code class="language-h"> albedoColor.xyz *= (<span class="hljs-number">1.0f</span> - shadow);
 </code></pre>
 <div style="text-align: right;">
-<h4 id="目次に戻る--10"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--11"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 <h3 id="54川瀬式ブルームフィルター">5.4.川瀬式ブルームフィルター</h3>
@@ -1143,7 +1207,7 @@ HDRレンダリングでは、ガウシアンブラーを一度しかかけな�
 <p>3.4枚のボケ画像を合成してシーンに加算合成します。<br>
 <img src="README_IMAGE\finalLuminance.png" width="600" alt="輝度抽出したテクスチャ"><br></p>
 <div style="text-align: right;">
-<h4 id="目次に戻る--11"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--12"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 <h3 id="55トゥーン調の表現">5.5.トゥーン調の表現</h3>
@@ -1155,13 +1219,15 @@ HDRレンダリングでは、ガウシアンブラーを一度しかかけな�
 そして、ライティングの計算を行った後、その値をUV座標のX成分としてランプテクスチャからライティングした値をフェッチします。<br>
 <img src="README_IMAGE\lampShading.png" width="600" alt="ランプシェーディング"><br><br>
 1.まず、モデル別にランプテクスチャを用意しました。<br>
-<img src="README_IMAGE\lampTexture.png" width="500" alt="ランプテクスチャ"><br>
-また、ライティングした値をフェッチする際に使うのはX成分だけなので、ランプテクスチャの高さ(Y成分)を1にすることで、画像のサイズを小さくし、メモリの使用量を削減しました。<br>
+<img src="README_IMAGE\lampTexture.png" width="500" alt="ランプテクスチャ"><br><br>
+フェッチする際に使うのはX成分だけなので、ランプテクスチャの高さ(Y成分)を1にすることで、画像のサイズを小さくし、メモリの使用量を削減しました。<br>
 その結果、<strong>キャッシュヒット率</strong>を上げ、データの読み取り速度を向上させることができました。<br>
 <img src="README_IMAGE\CasheHit.png" width="600" alt="キャッシュヒット率の説明"><br>
 ランプテクスチャのサイズを小さくした理由は、
 無駄にVRAMにアクセスする必要がないようにするためです。<br>
-キャッシュメモリの容量は少ないです。そのため、キャッシュメモリにデータを転送してもキャッシュメモリの容量を超えてしまうと、元々入っていたデータを上書きすることになり、上書きされたデータを呼び出すときはVRAMからアクセスしないといけなくなるからです。<br></p>
+キャッシュメモリの容量は少ないため、VRAMからアクセスしたデータをキャッシュメモリにデータを転送してもキャッシュメモリの容量を超えてしまうと、元々入っていたデータを上書きすることになります。<br>
+そうなると、上書きされたデータを呼び出そうとするときに、またVRAMからアクセスすることになり、良くない循環ができてしまいます。<br>
+なので、テクスチャのサイズを小さくしてキャッシュメモリに蓄積できるデータを増やしました。</p>
 <p>2.法線とディレクションライト(ライトの方向ベクトル)の内積を計算し、その値を0から1の間にクランプします。<br></p>
 <pre><code class="language-h"><span class="hljs-comment">//ハーフランバート拡散照明によるライティング計算</span>
 	<span class="hljs-type">float</span> p=dot(psIn.normal*<span class="hljs-number">-1.0f</span>,lightDirection.xyz);
@@ -1231,18 +1297,32 @@ depth2/=<span class="hljs-number">8.0f</span>;
 		<span class="hljs-keyword">return</span> color;
 	}
 </code></pre>
+<p><img src="README_IMAGE\Outline3.png" width="300" alt="アウトラインの結果"><br></p>
 <h4 id="3簡易リムライト">3.簡易リムライト</h4>
-<p>簡易リムライトとは、常に物体の輪郭線付近が光っている表現です。<br>
-アニメのキャラクターなどで、輪郭線付近が光っている表現があったため、より良いトゥーン調の表現のために実装しました。<br>
-普通のリムライトは、「光の方向」「視線」「物体の法線」の3要素を使用していて、カメラの位置や光源の位置などによって、輪郭線付近の光の強さが変わります。<br>
-一方、簡易リムライトは、「光の方向」を考慮せず、「視線」と「物体の法線」だけを使用して光の強さを計算するので、常に物体の輪郭線付近が光っている表現ができます。<br>
-アルゴリズムは、カメラ空間における物体の法線のZ値を利用して求めます。<br><br>
-リムライトあり<br>
-<img src="README_IMAGE\limLightB.png" width="300" alt="カメラ空間の法線の説明"><br>
-リムライトなし<br>
-<img src="README_IMAGE\limLightA.png" width="300" alt="カメラ空間の法線の説明"><br><br></p>
-<p>1.まず、サーフェイスの法線を利用してリムライトの強さを求めます。
-使用する法線は、カメラ空間における法線です。<br></p>
+<p>簡易リムライトとは、常に物体の輪郭付近が光っている表現です。<br>
+アニメのキャラクターなどで、輪郭付近が光っている表現があったため、より良いトゥーン調の表現のために実装しました。<br>
+普通のリムライトは、「光の方向」「視線」「物体の法線」の3要素を使用していて、カメラの位置や光源の位置などによって、輪郭付近の光の強さが変わります。<br>
+一方、簡易リムライトは、「光の方向」を考慮せず、「視線」と「物体の法線」だけを使用して光の強さを計算するので、常に物体の輪郭付近が光っている表現ができます。<br>
+アルゴリズムは、カメラ空間における物体の法線のZ値を利用して求めます。<br></p>
+<table>
+<thead>
+<tr>
+<th>リムライトなし</th>
+<th>リムライトあり</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="README_IMAGE\limLightA.png" width="300" alt="カメラ空間の法線の説明"></td>
+<td><img src="README_IMAGE\limLightB.png" width="300" alt="カメラ空間の法線の説明"></td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>1.まず、カメラ空間におけるサーフェイスの法線を利用してリムライトの強さを求めます。<br></p>
 <pre><code class="language-h"><span class="hljs-comment">//カメラ空間にするための行列と法線ベクトルの乗算してカメラ空間の法線を求める</span>
 psIn.normalInView = mul(mView,psIn.normal);
 
@@ -1284,8 +1364,8 @@ psIn.normalInView = mul(mView,psIn.normal);
 <span class="hljs-comment">// ×1.1fでリムライトの強さを1.1倍している</span>
 limLight = <span class="hljs-built_in">pow</span>(limLight, <span class="hljs-number">1.5f</span>) * <span class="hljs-number">1.1f</span>;
 </code></pre>
-<p>3.最後に、ライティングした反射光とリムライトの反射光を合算し、最終的な反射光とアルベドテクスチャカラーを乗算して出力するカラーを求めました。<br></p>
-<pre><code class="language-h"><span class="hljs-comment">//ライティングした値とリムライトの反射光を合算する</span>
+<p>3.最後に、計算した反射光とリムライトの反射光を合算し、最終的な反射光とアルベドテクスチャカラーを乗算して出力するカラーを求めました。<br></p>
+<pre><code class="language-h"><span class="hljs-comment">//計算した値とリムライトの反射光を合算する</span>
 float3 lig = directionLig + pointLig + 
 					spotLig + hemiLig + finalAmbient + limLight;
 
@@ -1296,7 +1376,7 @@ albedoColor.xyz*=lig;
 
 </code></pre>
   <div style="text-align: right;">
-<h4 id="目次に戻る--12"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--13"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 <h3 id="56被写界深度">5.6.被写界深度</h3>
@@ -1418,7 +1498,7 @@ boke.a = min(<span class="hljs-number">1.0f</span>, (depth - <span class="hljs-n
 </code></pre>
 <p><img src="README_IMAGE\Dof_blur_complete.png" width="600" alt="Dof完成"><br></p>
   <div style="text-align: right;">
-<h4 id="目次に戻る--13"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
+<h4 id="目次に戻る--14"><a href="#%E7%9B%AE%E6%AC%A1">目次に戻る</a> <!-- omit in toc --></h4>
 </div>
 <hr>
 
